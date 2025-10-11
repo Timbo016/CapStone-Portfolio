@@ -1,0 +1,214 @@
+.about-section {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Profile Card */
+.profile-card {
+  text-align: center;
+  padding: 50px 20px;
+  background:linear-gradient(135deg, #2E2E2E, #FF6F61);
+  color: #fff;
+}
+
+.profile-card img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.profile-card h2 {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+}
+
+.profile-card h3 {
+  font-weight: 500;
+  color: #e3f2fd;
+  margin-bottom: 0.5rem;
+}
+
+.profile-card p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Section Base Style */
+.section {
+  padding: 60px 20px;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  color: #fff;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+.section p, .section ul {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+/* Background Colors for each section */
+.about-me {
+  background-color: #0E4D92; /* Tomato */
+}
+
+.skills {
+  background-color: rgba(60, 179, 113, 0.8); /* MediumSeaGreen */
+}
+
+.achievements {
+  background-color: #DC143C; /* SteelBlue */
+}
+
+.goal {
+  background-color: rgba(128, 0, 128, 0.8); /* Purple */
+}
+
+/* Lists */
+.skills-list, .achievements-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.skills-list li, .achievements-list li {
+  margin-bottom: 0.7rem;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #333;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  transition: all 0.3s ease;
+  margin-left: 420px;
+}
+.btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+
+
+/*responsiveness */
+
+/* === Base Responsive Settings === */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make container text more readable on small screens */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Adjust general section padding for smaller screens */
+.section {
+  padding: 50px 15px;
+}
+
+/* === Responsive Profile Card === */
+.profile-card {
+  padding: 40px 20px;
+}
+
+.profile-card img {
+  width: 150px;
+  height: 150px;
+  border-width: 4px;
+}
+
+.profile-card h2 {
+  font-size: 1.5rem;
+}
+
+.profile-card h3 {
+  font-size: 1rem;
+}
+
+/* === Text Scaling === */
+.section h2 {
+  font-size: 1.6rem;
+}
+
+.section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* === Responsive Lists === */
+.skills-list li, .achievements-list li {
+  font-size: 0.95rem;
+  margin: 0.5rem auto;
+  width: 95%;
+}
+
+/* === Buttons === */
+.btn {
+  padding: 10px 20px;
+  font-size: 0.95rem;
+}
+
+/* === Media Queries === */
+@media (min-width: 768px) {
+  /* Tablet and up */
+  .section h2 {
+    font-size: 2rem;
+  }
+
+  .profile-card img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .section p, .section ul {
+    font-size: 1.05rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Desktop view */
+  .section {
+    padding: 80px 50px;
+  }
+
+  .profile-card {
+    padding: 60px 20px;
+  }
+
+  .skills-list, .achievements-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    text-align: left;
+  }
+}
